@@ -91,23 +91,34 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 %--------------------------------------------------------------------------------
 %                                    Constants                                  -
 %--------------------------------------------------------------------------------
-\def\afterheaderspace{3pt}
-\def\beforesectionheaderspace{4.75pt}
-\def\sectionheadermargin{6pt}
-\def\aftersectionheaderspace{-4pt}
-\def\sectionheaderhrlueheight{0.5pt}
+\newlength\afterheaderspace
+\setlength\afterheaderspace{3pt}
+\newlength\beforesectionheaderspace
+\setlength\beforesectionheaderspace{4.75pt}
+\newlength\sectionheadermargin
+\setlength\sectionheadermargin{6pt}
+\newlength\aftersectionheaderspace
+\setlength\aftersectionheaderspace{-4pt}
+\newlength\sectionheaderhrlueheight
+\setlength\sectionheaderhrlueheight{0.5pt}
 
+\newlength\aftersinglelinesubsectionheaderspace
 \ifpapersize
-\def\aftersinglelinesubsectionheaderspace{-4pt}
+\setlength\aftersinglelinesubsectionheaderspace{-4pt}
 \else
-\def\aftersinglelinesubsectionheaderspace{-18.5pt}
+\setlength\aftersinglelinesubsectionheaderspace{-18.5pt}
 \fi
 
-\def\afterdoublelinesubsectionheaderspace{-10pt}
-\def\aftermultilinesubsectionheaderspace{-6pt}
-\def\afteremptysubsectionheaderspace{3pt}
-\def\subsectionmargin{9pt}
-\def\aftersubsectionspace{4pt}
+\newlength\afterdoublelinesubsectionheaderspace
+\setlength\afterdoublelinesubsectionheaderspace{-10pt}
+\newlength\aftermultilinesubsectionheaderspace
+\setlength\aftermultilinesubsectionheaderspace{-6pt}
+\newlength\afteremptysubsectionheaderspace
+\setlength\afteremptysubsectionheaderspace{3pt}
+\newlength\subsectionmargin
+\setlength\subsectionmargin{9pt}
+\newlength\aftersubsectionspace
+\setlength\aftersubsectionspace{4pt}
 
 %--------------------------------------------------------------------------------
 %                            Header Setup and Printing                          -
